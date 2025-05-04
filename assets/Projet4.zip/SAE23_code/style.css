@@ -1,0 +1,148 @@
+/* Feuille de style pour le site GestionNet */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.logout-btn {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/25/25376.png");
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.logout-btn::after {
+    content: 'Déconnexion';
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.logout-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 16px;
+}
+
+.popup.success {
+    background-color: #4CAF50; /* Vert */
+    color: #ffffff; /* Blanc */
+}
+
+.popup.error {
+    background-color: #f44336; /* Rouge */
+    color: #ffffff; /* Blanc */
+}
+
+.popup i {
+    margin-right: 10px;
+}
+
+.popup.success i {
+    color: green;
+}
+
+.popup.error i {
+    color: rgb(178, 0, 0);
+}
+
+.welcome-message {
+   
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 0px; /* Espacement en bas */
+    border-radius: 10px;
+}

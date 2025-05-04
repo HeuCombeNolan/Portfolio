@@ -1,0 +1,115 @@
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Style pour l'en-tête */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(0, 91, 147);
+}
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: auto;
+}
+h2 {
+    text-align: justify;
+    color: rgb(1, 97, 1);
+    margin: 40px;
+}
+
+/* Style pour le pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+}
+/* Style pour la barre de recherche */
+#searchInput {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Style pour la liste des communes */
+#communesList {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style pour les liens des communes */
+#communesList li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style pour les liens des communes au survol */
+#communesList li a:hover {
+    background-color: #ccc;
+}
+
+/* Style pour les détails des communes */
+#communesList li div {
+    margin-left: 15px;
+    overflow: hidden; /* Cela assure que les détails sont cachés par défaut */
+    max-height: 0;
+    transition: max-height 0.3s ease; 
+}
+
+/* Style pour les tableaux */
+table {
+    width: max-content;
+    margin: auto; 
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+/* Style pour le conteneur du tableau */
+.table-container {
+    overflow-x: auto;
+    max-height: 500px; /* Ajustez la hauteur maximale selon vos besoins */
+    transition: max-height 0.3s ease; /* Ajoute une transition fluide lorsqu'on les développe ou les réduit */
+}
+
+/* Style pour les cellules des tableaux */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Style pour les cellules d'en-tête des tableaux */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Style pour le contenu principal */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

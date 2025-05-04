@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Portfolio Heu--Combe Nolan</title>
+</head>
+<body>
+  <!-- En-tête de la page -->
+  <header id="header_main">
+    <div class="container">
+      <div class="logo">
+        <a href="#ancre0"><img width="40" height="40" src="images/logo_maison-removebg-preview.png" alt="home--v1"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#titlePart1Competences">Compétences</a></li>
+          <li><a href="#titlePart1">Projets</a></li>
+          <li><a href="#ancre5">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section principale améliorée -->
+  <div class="main_page" id="ancre0">
+    <div class="main_page_left">
+      <h2>Bienvenue sur mon Portfolio</h2>
+      <h1>HEU--COMBE NOLAN</h1>
+      <h3>Étudiant en BUT Réseaux et Télécommunications à l’IUT de Villetaneuse</h3>
+      <h3>En alternance chez Orange en tant que Technicien Réseau Structurant </h3>
+      <div class="bnt_main_page">
+        <a href="images/CV.pdf" target="_blank" class="btn-main">Télécharger mon CV</a>
+        <ul id="list_reseau">
+          <li>
+            <a href="mailto:combenolan@gmail.com" title="Envoyer un email"><img width="50" height="50" src="images/mailll.png" alt="email"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/heu-combe-nolan-740160297/" target="_blank" title="Mon LinkedIn"><img width="50" height="50" src="images/linkedin_black_logo_icon_147114.webp" alt="linkedin"></a>
+          </li>
+          <li>
+            <a href="https://github.com/HeuCombeNolan" target="_blank" title="Mon GitHub"><img width="50" height="50" src="images/github-mark.png" alt="github"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_page_right">
+      <img src="images/blog-adam-header.svg" alt="Photo de Nolan" class="profile-picture">
+    </div>
+  </div>
+
+  <div class="section-separator"></div>
+
+
+  <style>
+    .section-separator {
+  height: 70px;
+  background-color: #b8b8b8; /* gris clair */
+  
+  width: 100%;
+}
+
+    .main_page {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      background: linear-gradient(to right, #f4f4f9, #e0e0e5);
+      height: calc(100vh - 70px);
+    }
+
+    .main_page_left {
+      max-width: 50%;
+    }
+
+    .main_page_left h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .main_page_left h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .main_page_left h3 {
+      font-size: 24px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .bnt_main_page {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .btn-main {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #405cf5;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-main:hover {
+      background-color: #304cb2;
+    }
+
+    #list_reseau {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #list_reseau li a img {
+      transition: transform 0.3s;
+    }
+
+    #list_reseau li a img:hover {
+      transform: scale(1.2);
+    }
+
+    .main_page_right {
+      max-width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-picture {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+
+    .section {
+  position: relative;
+  padding: 80px 20px;
+  background: #f4f4f9;
+}
+
+.transition {
+  height: 50px;
+  background: linear-gradient(180deg, #f4f4f9 0%, #ffffff 100%);
+}
+
+.section h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section:nth-child(even) {
+  background: #ffffff;
+}
+
+.transition-gradient {
+  height: 50px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f9 100%);
+}
+
+  </style>
+
+
+
+
+  <!-- Présentation Section -->
+  <section id="presentation" class="section">
+    <h1>Présentation</h1>
+    <div class="container-section presentation-grid">
+      
+      <div class="item">
+        <p>Étudiant en 3ᵉ année de BUT Réseaux et Télécommunications à l’IUT de Villetaneuse, je développe mes compétences techniques et opérationnelles en alternance chez Orange, en tant que Technicien Réseaux Structurant. Intégré dans un environnement dynamique et collaboratif, je participe activement à la production, la maintenance et la supervision d’équipements réseau tels que DSLAM, routeurs, multiplexeurs ou faisceaux hertziens. Ces interventions, pilotées via un système de tickets, m’ont permis de comprendre l’importance de chaque action dans la chaîne de communication.
+
+          Grâce à ma formation universitaire, j’ai acquis de solides bases en protocoles réseau, cybersécurité, routage, systèmes Linux et téléphonie IP. En parallèle, j’ai renforcé ces acquis via des formations internes chez Orange, notamment sur la sécurité et les infrastructures opérateurs. Rigoureux, autonome et passionné par les technologies télécoms, je souhaite à terme évoluer vers un poste de chef de projet réseau, en contribuant à la conception et au pilotage de solutions innovantes, fiables et évolutives.<br></p>
+      </div>
+      
+      <div class="video-presentation-container">
+        <h3>Vidéo de Présentation</h3>
+        <div class="video-center">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  title="Vidéo de présentation"
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      
+      
+
+    </div>
+  </section>
+
+
+<style>
+#presentation {
+  padding: 50px 20px;
+  background: #f4f4f9;
+}
+
+#presentation h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.container-section {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.presentation-grid .item {
+  text-align: justify;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-grid .item p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .presentation-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .presentation-grid .item:nth-child(1) {
+    grid-column: span 2;
+  }
+}
+
+
+.section {
+  position: relative;
+  padding: 80px 20px;
+  background: #f4f4f9;
+}
+
+.transition {
+  height: 50px;
+  background: linear-gradient(180deg, #f4f4f9 0%, #ffffff 100%);
+}
+
+.section h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section:nth-child(even) {
+  background: #ffffff;
+}
+
+.transition-gradient {
+  height: 50px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f9 100%);
+}
+
+.video-presentation-container {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.video-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-center iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .video-center iframe {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.presentation-grid .video-presentation-container {
+  grid-column: span 2;
+}
+
+
+
+</style>
+  
+  <!-- Parcours Section -->
+  <section id="parcours" class="section">
+    <h1>Parcours</h1>
+    <div class="container-section">
+      <div class="grid">
+        <div class="item">
+          <img src="images/diploma.jpg" alt="Diplôme">
+          <h3>Brevet des Collèges</h3>
+          <p>Mention Très Bien</p>
+        </div>
+        <div class="item">
+          <img src="images/internship.png" alt="Stage">
+          <h3>Stage de 3ème</h3>
+          <p>Orange, équipe d'intervention entreprise 77/93</p>
+        </div>
+        <div class="item">
+          <img src="images/highschool.png" alt="Lycée">
+          <h3>Baccalauréat STI2D</h3>
+          <p>Mention Bien</p>
+        </div>
+        <div class="item">
+          <img src="images/university.png" alt="Université">
+          <h3>BUT Réseaux et Télécommunications</h3>
+          <p>En cours (Alternance chez Orange)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<style>
+  .transition1 {
+    height: 400px;
+    background: url("images/transition1-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #parcours {
+    padding: 50px 20px;
+    background: #f4f4f9;
+  }
+  
+  #parcours h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .container-section {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .item {
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  .item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+
+
+
+  .section {
+  position: relative;
+  padding: 80px 20px;
+  background: #f4f4f9;
+}
+
+.transition {
+  height: 50px;
+  background: linear-gradient(180deg, #f4f4f9 0%, #ffffff 100%);
+}
+
+.section h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section:nth-child(even) {
+  background: #ffffff;
+}
+
+.transition-gradient {
+  height: 50px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f9 100%);
+}
+
+
+
+</style>
+
+
+    
+  </div>
+  <!-- Section COMPÉTENCES améliorée -->
+<div>
+  <br>
+  
+  <div class="competences-container">
+    <h1 id="titlePart1Competences">Compétences</h1>
+    <!-- Grille des catégories de compétences -->
+    <div class="competences-grid">
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/c-plus-plus-logo.png" alt="Langages">
+        <h3>Langages</h3>
+        <p>C++, Python, Bash</p>
+      </div>
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios/50/000000/html.png" alt="Web">
+        <h3>Développement Web</h3>
+        <p>HTML, CSS, JavaScript (base)</p>
+      </div>
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/linux.png" alt="OS">
+        <h3>Systèmes d'exploitation</h3>
+        <p>Linux (Debian/Ubuntu), Windows</p>
+      </div>
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/network-card.png" alt="Protocoles">
+        <h3>Protocoles Réseau</h3>
+        <p>TCP/IP, UDP, DHCP, DNS, ICMP, HTTP, FTP, SSH</p>
+      </div>
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/switch.png" alt="Routage">
+        <h3>Routage & Commutation</h3>
+        <p>VLAN, NAT, OSPF, RIP, BGP, STP</p>
+      </div>
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios/50/000000/phone.png" alt="VoIP">
+        <h3>Téléphonie & Multimédia</h3>
+        <p>SIP, RTP, QoS, IPBX, visioconférence</p>
+      </div>
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/docker.png" alt="Virtualisation">
+        <h3>Virtualisation & Outils</h3>
+        <p>VirtualBox, Docker, GNS3, Ansible</p>
+      </div>
+      <div class="competence-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/shield.png" alt="Sécurité">
+        <h3>Sécurité & Supervision</h3>
+        <p>VPN, IPsec, Wireshark, SNMP, Syslog, pare-feu</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Détails supplémentaires pour chaque compétence -->
+      <div class="competences-details">
+        <h3>Détails des compétences acquises à l'IUT :</h3>
+        <div class="competence-columns">
+          <!-- Colonne 1 -->
+          <div class="detail">
+            <h4><strong>Administrer</strong></h4>
+            <p>Mise en place de services réseau (DHCP, DNS, NAT) sur des machines virtuelles sous Linux.</p>
+            <p>Configuration d’un routeur Cisco avec VLANs et routage inter-VLAN.</p>
+            <p>Supervision d’un réseau via l’outil Centreon ou Wireshark en TP.</p>
+            <p>Utilisation d’outils comme GNS3 ou Cisco Packet Tracer pour simuler des topologies réseau.</p>
+            <p>Gestion des droits utilisateurs et de la sécurité d’un réseau local dans un environnement Windows Server.</p>
+      
+            <h4><strong>Connecter</strong></h4>
+            <p>Conception d’un réseau local complet pour une entreprise fictive avec topologie hiérarchique.</p>
+            <p>TP de mise en place d’une liaison fibre optique simulée et test de connectivité.</p>
+            <p>Configuration d’un point d’accès Wi-Fi sécurisé avec authentification WPA2.</p>
+            <p>Réalisation d’un câblage RJ45 et vérification avec un testeur de câble en atelier.</p>
+            <p>Étude des couches physiques et liaison dans des travaux pratiques sur le modèle OSI.</p>
+      
+            <h4><strong>Programmer</strong></h4>
+            <p>Développement de scripts Python pour automatiser la configuration réseau.</p>
+            <p>Création d’un mini-site web HTML/CSS dans le cadre d’un projet de 1ʳᵉ année.</p>
+            <p>TP de programmation orientée objet en C++ ou Python pour gérer des périphériques réseau.</p>
+            <p>Traitement de données CSV liées à des équipements réseau (projet data).</p>
+            <p>Simulation de requêtes API dans un contexte réseau (SDN / supervision).</p>
+          </div>
+      
+          <!-- Colonne 2 -->
+          <div class="detail">
+            <h4><strong>Rapprocher</strong></h4>
+            <p>Déployer une solution de téléphonie IP avec Asterisk ou 3CX.</p>
+            <p>Mettre en œuvre la QoS pour garantir la qualité des appels VoIP.</p>
+            <p>Configurer les protocoles SIP et RTP entre plusieurs sites.</p>
+            <p>Intégrer la visioconférence dans une solution collaborative.</p>
+            <p>Gérer les plans de numérotation multi-sites et la portabilité.</p>
+      
+            <h4><strong>Unifier</strong></h4>
+            <p>Projet de fin d’année : interconnexion de deux réseaux distants avec sécurisation.</p>
+            <p>Configuration de routeurs avec OSPF pour assurer le routage dynamique.</p>
+            <p>Mise en place de solutions de virtualisation (VirtualBox, Docker) dans un réseau simulé.</p>
+            <p>Utilisation d’une base de données SQL pour gérer les équipements d’un réseau.</p>
+            <p>Rédaction de documentation technique et schémas réseau pour assurer l’interopérabilité des systèmes.</p>
+      
+            <h4><strong>Compétences en alternance</strong></h4>
+            <p>Maintenance curative : diagnostic de pannes, interventions physiques, respect des GTR.</p>
+            <p>Installation et mise en service d’équipements cœur de réseau (DSLAM, MTS, etc.).</p>
+            <p>Suivi et mise à jour des interventions dans les bases de données techniques.</p>
+            <p>Maintenance préventive : contrôle qualité, coordination avec les sous-traitants.</p>
+            <p>Supervision et analyse d’incidents avec les services réseau (Conduite d’activité, ASI).</p>
+            <p>Gestion du matériel : mise à jour logicielle, inventaire, documentation technique.</p>
+            <p>Application des normes sécurité, qualité et environnement en intervention terrain.</p>
+          </div>
+        </div>
+      </div>
+      
+  <style>
+    .competences-container {
+      padding: 20px;
+      background: #f4f4f9;
+      border-radius: 10px;
+    }
+
+    #titlePart1Competences {
+      text-align: center;
+      margin-bottom: 30px;
+      background: #f4f4f9;
+    }
+
+    .competences-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+      
+    }
+
+    .competence-item {
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .competence-item:hover {
+      transform: scale(1.05);
+    }
+
+    .competence-item img {
+      max-width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .competence-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .competences-details {
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .competences-details h3 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .competences-details .detail {
+      margin-bottom: 15px;
+    }
+
+    .competences-details .detail h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .competences-details .detail p {
+      font-size: 14px;
+      color: #555;
+    }
+
+
+
+
+    .section {
+  position: relative;
+  padding: 80px 20px;
+  background: #f4f4f9;
+}
+
+.transition {
+  height: 10px;
+  background: linear-gradient(180deg, #f4f4f9 0%, #ffffff 100%);
+}
+
+.section h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section:nth-child(even) {
+  background: #ffffff;
+}
+
+.transition-gradient {
+  height: 50px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f9 100%);
+}
+
+.competence-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.competence-columns .detail {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+</style> <br>
+
+
+  <div >
+    <h1 id="titlePart1" class="proj">Projets</h1>
+    <div class="presentationProjetPage pagePre1">
+      
+      <nav>
+        <button><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FFFFFF/delete-sign--v1.png" alt="delete-sign--v1" onclick="close1()"></button>
+      </nav>
+      
+      <div class="mainPagePresentation">
+        <img src="assets/data.jpg" id="imgProjet1" alt="ArduinoLogo">
+        <p>Le professionnel R&T est régulièrement amené à traiter des données provenant du système d’information de l’entreprise pour ses besoins personnels ou ceux de ses collaborateurs. Ces données peuvent par exemple être liées à l’infrastructure de son réseau (état des équipements, des machines) ou aux utilisateurs. Généralement obtenues sous forme brute, elles sont ensuite traitées avec des objectifs très variés (net-
+          toyage des données, extraction d’informations comptables, archivage, ...) pour être réutilisées à d’autres fins ou être présentées dans des vues synthétiques. Ces traitements peuvent être récurrents (mensualisation de bilan, sauvegarde de données pério-
+          dique, ...) et gagnent à être automatisés. Le professionnel R&T doit donc développer des scripts ou des programmes pour gérer de façon efficace le traitement de ces données.<a href="images/code.py" target="_blank" style="text-decoration: underline; color: red">ici</a></p>
+      </div>
+    </div>
+  
+  <!-- Section Projets améliorée -->
+  <div >
+    
+    <div class="projects-container">
+      <!-- Grille des projets -->
+      <div class="projects-grid">
+        <div class="project-item">
+          <img src="./assets/data.jpg" alt="Traitement de données">
+          <h2>Traiter des données</h2>
+          <p>Développement d'un site web pour automatiser le traitement et la visualisation des données.</p>
+          <button class="project-link" onclick="showModal('modal1')">En savoir plus</button>
+          <button class="project-link" onclick="window.location.href='./assets/projet1.zip'">Télécharger le projet</button>
+        </div>
+        <div class="project-item">
+          <img src="./assets/video.png" alt="Vidéo éducative">
+          <h2>Vidéo de sensibilisation</h2>
+          <p>Création d'une vidéo sur l'hygiène informatique, mettant en lumière le phishing.</p>
+          <button class="project-link" onclick="showModal('modal2')">En savoir plus</button>
+          <button class="project-link" onclick="window.location.href='./assets/projet2.zip'">Télécharger le projet</button>
+        </div>
+        <div class="project-item">
+          <img src="./assets/raw.webp" alt="Rapport DDoS">
+          <h2>Rapport attaque DDoS</h2>
+          <p>Analyse approfondie d'une attaque DDoS et propositions de défense numérique.</p>
+          <button class="project-link" onclick="showModal('modal3')">En savoir plus</button>
+          <button class="project-link" onclick="window.location.href='./assets/projet3.zip'">Télécharger le projet</button>
+        </div>
+        <div class="project-item">
+          <img src="./assets/An-Explanation-of-the-Different-IP-Address-Classes-SOCIAL.png" alt="Site weeb pour la gestion des adresses IP">
+          <h2>Site weeb pour la gestion des adresses IP</h2>
+          <p>Automatisation et Gestion Centralisée des Connexions Internet pour Start-Up : Attribution d'Adresses IP et Gestion Clients via Base de Données SQL</p>
+          <button class="project-link" onclick="showModal('modal4')">En savoir plus</button>
+          <button class="project-link" onclick="window.location.href='./assets/projet4.zip'">Télécharger le projet</button>
+        </div>
+
+        <div class="project-item">
+          <img src="./assets/réseaux.jpeg" alt="Construire un réseau Informatique">
+          <h2>Construire un réseau Informatique</h2>
+          <p>Création et Configuration d’un Réseau Informatique Complet avec Fonctionnalités Avancées</p>
+          <button class="project-link" onclick="showModal('modal5')">En savoir plus</button>
+          <button class="project-link" onclick="window.location.href='./assets/projet5.zip'">Télécharger le projet</button>
+        </div>
+      </div>
+
+      <!-- Modals pour les projets -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h2>Traiter des données</h2>
+          <p>Analyse et Visualisation Interactive des Données de Bornes de Recharge Électrique<br> 
+
+            🔋 Objectif : Développement d’un script Python pour analyser et visualiser les données relatives aux bornes de recharge électrique dans la région des Hauts-de-France. Ce projet a pour but de faciliter la compréhension de l’infrastructure de recharge en offrant une représentation claire et interactive des informations par localité et divers critères techniques.<br> 
+            
+            🛠 Fonctionnalités principales :<br> 
+            Chargement et Organisation des Données : Importation des données extraites d’un fichier CSV, puis organisation des informations par commune pour une meilleure hiérarchisation.
+            <br> Analyse Interactive : Création de diagrammes interactifs permettant de visualiser la répartition des bornes selon plusieurs critères : opérateur, type de prise, puissance délivrée et conditions d'accès.
+            <br> Page Web Dynamique : Génération d’une page HTML interactive qui présente non seulement les données par localité, mais aussi des graphiques visuels pour une analyse approfondie.
+            <br> Exploration Facilitée : Grâce à cette page web, les utilisateurs peuvent facilement explorer les données et obtenir des informations détaillées sur les bornes de recharge dans chaque commune.
+            <br> 
+            🌍 Bénéfices :<br> 
+            Vision Claire et Structurée : La présentation par commune et les graphiques dynamiques permettent une analyse détaillée et rapide de l’infrastructure de recharge.
+            <br> Accessibilité : La page HTML générée est facilement accessible et consultable, offrant une expérience utilisateur fluide pour toute personne souhaitant explorer les données.
+            <br> Optimisation des Prises de Décision : Ce projet facilite la prise de décision en fournissant des informations précieuses pour le déploiement et l’optimisation des bornes de recharge.
+            Ce projet représente un pas important vers une meilleure gestion et planification des infrastructures de recharge électrique, un enjeu crucial pour la transition énergétique.
+            <br><br>Compétences : HTML · Feuilles de style en cascade (CSS) · CSV · Python (langage de programmation)</p>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <h2>Vidéo de Sensibilisation : Lutte Contre le Phishing</h2>
+          <p>Cette vidéo éducative a pour objectif de sensibiliser le public aux dangers du phishing, une forme d'escroquerie numérique en constante évolution. Elle explique de manière claire et détaillée les mécanismes derrière ces attaques, leurs méthodes de propagation, ainsi que les impacts qu'elles peuvent avoir sur les utilisateurs et les entreprises.
+            <br><br>
+            En plus de décrire les risques associés au phishing, la vidéo propose des stratégies pratiques pour identifier les tentatives de fraude avant qu'elles n'atteignent leur cible. Grâce à des exemples concrets et des conseils précieux, elle permet aux spectateurs d’acquérir les compétences nécessaires pour se protéger efficacement contre cette menace omniprésente.
+            <br><br>
+            Rejoignez-nous dans cette initiative de prévention et apprenez à défendre vos données personnelles et professionnelles face aux cybercriminels.</p>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <h2>Rapport attaque DDoS</h2>
+          <p>
+
+            🔍 Objectif : Ce projet porte sur l’analyse d’une récente attaque DDoS (Distributed Denial of Service) visant des institutions gouvernementales françaises. L’objectif est de comprendre les mécanismes de l’attaque, d’évaluer ses répercussions sur la sécurité nationale, et de proposer des stratégies de renforcement de la défense numérique pour prévenir de telles menaces à l'avenir.
+            <br>
+            <br>🛡 Points Clés du Rapport :
+            <br>Analyse de l'Attaque DDoS :
+        
+            <br>• Étude détaillée des techniques et des vecteurs utilisés dans l’attaque.<br>
+            • Identification des cibles principales et du modus operandi des attaquants.
+        
+            <br>Impact sur la Cybersécurité en France :
+        
+            <br>• Évaluation des conséquences immédiates et à long terme sur la sécurité nationale.
+            <br>• Répercussions sur les services publics, la gestion des infrastructures critiques et la confiance du public dans les systèmes numériques.
+        
+            <br>Recommandations pour Renforcer la Défense Numérique :
+        
+            <br>• Propositions concrètes pour améliorer les mesures de prévention, de détection et de réponse aux attaques DDoS.
+            <br>• Mise en avant de technologies de filtrage avancées, de stratégies de redondance des services et de formation des équipes de réponse aux incidents.🔍 <br>Objectif : Ce projet porte sur l’analyse d’une récente attaque DDoS (Distributed Denial of Service) visant des institutions gouvernementales françaises. L’objectif est de comprendre les mécanismes de l’attaque, d’évaluer ses répercussions sur la sécurité nationale, et de proposer des stratégies de renforcement de la défense numérique pour prévenir de telles menaces à l'avenir. <br>🛡 Points Clés du Rapport : Analyse de l'Attaque DDoS : • Étude détaillée des techniques et des vecteurs utilisés dans l’attaque. <br>• Identification des cibles principales et du modus operandi des attaquants. Impact sur la Cybersécurité en France : <br>• Évaluation des conséquences immédiates et à long terme sur la sécurité nationale. <br>• Répercussions sur les services publics, la gestion des infrastructures critiques et la confiance du public dans les systèmes numériques. Recommandations pour Renforcer la Défense Numérique : <br>• Propositions concrètes pour améliorer les mesures de prévention, de détection et de réponse aux attaques DDoS. <br>• Mise en avant de technologies de filtrage avancées, de stratégies de redondance des services et de formation des équipes de réponse aux incidents.
+        
+            <br><br>Compétences : Rédaction de rapport · Déni de service distribué (DDoS) · Cybersécurité</p>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <h2>Site weeb pour la gestion des adresses IP</h2>
+          <p>    🔧 Objectif : Développement d’une solution informatique complète pour une start-up spécialisée dans les connexions Internet. Cette solution permet de gérer de manière centralisée les adresses IP et d'automatiser l'attribution des adresses IP aux nouveaux clients, tout en centralisant les informations des clients dans une base de données SQL.
+            <br>
+            🚀 Fonctionnalités clés :<br>
+            Gestion des Adresses IP : Gestion des adresses IP du bloc 164.166.1.0/24, avec attribution automatique des adresses IP aux clients.<br>
+            Automatisation des Processus : Attribution automatique des IP, ajout des clients dans la base de données, gestion de la suppression des clients, et visualisation de leurs informations.<br>
+            Base de Données SQL : Utilisation d'une base de données SQL centralisée pour stocker et gérer toutes les informations liées aux clients, permettant une gestion simplifiée et efficace.<br>
+            Interface Utilisateur Intuitive : Développement d’une interface facile à utiliser, permettant aux opérateurs, même non-techniques, de gérer les adresses IP et les informations des clients de manière fluide.<br>
+            🔑 Bénéfices :<br>
+            Gestion Centralisée : Accès à toutes les informations des clients et des adresses IP depuis une plateforme unique.<br>
+            Automatisation : Réduction des erreurs humaines et gain de temps grâce à l’automatisation des tâches répétitives.<br>
+            Simplicité d’utilisation : Interface conviviale, permettant à toute équipe de gérer efficacement les clients et les ressources IP.<br>
+            Cette solution innovante permet à la start-up de répondre rapidement aux besoins de ses clients tout en optimisant la gestion de ses ressources techniques.Automatisation et Gestion Centralisée des Connexions Internet pour Start-Up : Attribution d'Adresses IP et Gestion Clients via Base de Données SQL <br>🔧 Objectif : Développement d’une solution informatique complète pour une start-up spécialisée dans les connexions Internet. Cette solution permet de gérer de manière centralisée les adresses IP et d'automatiser l'attribution des adresses IP aux nouveaux clients, tout en centralisant les informations des clients dans une base de données SQL. <br>🚀 Fonctionnalités clés : Gestion des Adresses IP : Gestion des adresses IP du bloc 164.166.1.0/24, avec attribution automatique des adresses IP aux clients. <br>Automatisation des Processus : Attribution automatique des IP, ajout des clients dans la base de données, gestion de la suppression des clients, et visualisation de leurs informations. <br>Base de Données SQL : Utilisation d'une base de données SQL centralisée pour stocker et gérer toutes les informations liées aux clients, permettant une gestion simplifiée et efficace. <br>Interface Utilisateur Intuitive : Développement d’une interface facile à utiliser, permettant aux opérateurs, même non-techniques, de gérer les adresses IP et les informations des clients de manière fluide. <br>🔑 Bénéfices : <br>Gestion Centralisée : Accès à toutes les informations des clients et des adresses IP depuis une plateforme unique. <br>Automatisation : Réduction des erreurs humaines et gain de temps grâce à l’automatisation des tâches répétitives. <br>Simplicité d’utilisation : Interface conviviale, permettant à toute équipe de gérer efficacement les clients et les ressources IP. Cette solution innovante permet à la start-up de répondre rapidement aux besoins de ses clients tout en optimisant la gestion de ses ressources techniques.<br>
+        
+            Compétences : Système de gestion de base de données (SGBD) · SQL · Gestion d’adresses IP
+          </p>
+        </div>
+      </div>
+
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <h2>Construire un réseau Informatique</h2>
+          <p>    🔧 Objectif : Conception et mise en œuvre d’un réseau informatique complet intégrant des technologies avancées pour la gestion du routage, l’attribution dynamique d’adresses IP, ainsi que l’accès sécurisé à Internet. Ce projet a impliqué la configuration et l’interconnexion d’équipements réseau Cisco (routeurs, switchs) ainsi que d'ordinateurs, permettant une infrastructure réseau robuste et performante.
+            <br>
+            🛠 Fonctionnalités Implémentées :<br>
+            Routage :<br>
+            Routage Statique : Configuration de routes statiques pour une gestion précise et contrôlée du trafic réseau.<br>
+            Routage Dynamique : Mise en œuvre des protocoles de routage dynamique OSPF et RIPv2, permettant une adaptation automatique du réseau aux changements de topologie.<br>
+            Services Réseau :<br>
+        
+            DHCP : Mise en place du DHCP pour une attribution automatique des adresses IP aux équipements du réseau, simplifiant la gestion des adresses et assurant une configuration rapide des appareils.<br>
+            NAT/PAT : Configuration du NAT/PAT pour permettre aux équipements internes d’accéder à Internet tout en assurant la sécurité et l’anonymat des adresses internes.<br>
+            ⚙️ Matériel Utilisé :<br>
+            Routeurs et Switchs Cisco : Déploiement de solutions réseau professionnelles avec des équipements Cisco pour garantir la fiabilité, la performance et la scalabilité du réseau.<br>
+            🚀 Bénéfices :<br>
+            Optimisation du Routage : Grâce au routage statique et dynamique, le réseau s'adapte efficacement aux évolutions de la topologie et assure une communication fluide entre les différents segments.<br>
+            Simplicité de Gestion : L’intégration du DHCP simplifie l’attribution d’adresses IP et améliore la gestion des équipements réseau.<br>
+            Sécurisation de l’Accès Internet : Le NAT/PAT permet de contrôler l'accès à Internet tout en préservant la sécurité du réseau interne.Création et Configuration d’un Réseau Informatique Complet avec Fonctionnalités Avancées <br>🔧 Objectif : Conception et mise en œuvre d’un réseau informatique complet intégrant des technologies avancées pour la gestion du routage, l’attribution dynamique d’adresses IP, ainsi que l’accès sécurisé à Internet. Ce projet a impliqué la configuration et l’interconnexion d’équipements réseau Cisco (routeurs, switchs) ainsi que d'ordinateurs, permettant une infrastructure réseau robuste et performante. <br>🛠 Fonctionnalités Implémentées : <br>Routage :<br> Routage Statique :<br> Configuration de routes statiques pour une gestion précise et contrôlée du trafic réseau. <br>Routage Dynamique : Mise en œuvre des protocoles de routage dynamique OSPF et RIPv2, permettant une adaptation automatique du réseau aux changements de topologie. <br>Services Réseau : DHCP : Mise en place du DHCP pour une attribution automatique des adresses IP aux équipements du réseau, simplifiant la gestion des adresses et assurant une configuration rapide des appareils. <br>NAT/PAT : Configuration du NAT/PAT pour permettre aux équipements internes d’accéder à Internet tout en assurant la sécurité et l’anonymat des adresses internes. <br>⚙️ Matériel Utilisé : Routeurs et Switchs Cisco : Déploiement de solutions réseau professionnelles avec des équipements Cisco pour garantir la fiabilité, la performance et la scalabilité du réseau. <br>🚀 Bénéfices : Optimisation du Routage : Grâce au routage statique et dynamique, le réseau s'adapte efficacement aux évolutions de la topologie et assure une communication fluide entre les différents segments. <br>Simplicité de Gestion : L’intégration du DHCP simplifie l’attribution d’adresses IP et améliore la gestion des équipements réseau. <br>Sécurisation de l’Accès Internet : Le NAT/PAT permet de contrôler l'accès à Internet tout en préservant la sécurité du réseau interne.<br>
+            <br>
+            Compétences : Cisco IOS · NAT · PAT · OSPF · RIPv2 · Linux · DHCP
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .projects-container {
+      padding: 20px;
+      background: #f4f4f9;
+      border-radius: 10px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-item {
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: scale(1.05);
+    }
+
+    .project-item img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .project-item h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .project-item p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .project-link {
+      padding: 10px 15px;
+      background-color: #405cf5;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .project-link:hover {
+      background-color: #304cb2;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+    
+  </style>
+
+  <script>
+    function showModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+<footer>
+  <div class="contactPage" id="ancre5">
+    <h1>Contact</h1>
+    <p>Vous pouvez me contacter via les plateformes suivantes :</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <img src="images/mail.png" alt="Email">
+        <h2>Email</h2>
+        <a href="mailto:combenolan@gmail.com">combenolan@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <img src="images/linkedin_black_logo_icon_147114.webp" alt="LinkedIn">
+        <h2>LinkedIn</h2>
+        <a href="https://www.linkedin.com/in/heu-combe-nolan-740160297/" target="_blank">Mon profil LinkedIn</a>
+      </div>
+      <div class="contact-item">
+        <img src="images/github-mark.png" alt="GitHub">
+        <h2>GitHub</h2>
+        <a href="https://github.com/HeuCombeNolan" target="_blank">Mon profil GitHub</a>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Nolan Heu-Combe. Tous droits réservés.<br><br></p>
+  </div>
+</footer>
+<style>
+.footer-bottom {
+  border-top: 2px solid #000;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-weight: bold;
+  color: #333;
+}
+</style>
+    
+  </body>
+  </html>
+  

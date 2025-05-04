@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo img {
+  position: fixed;
+  left: 40px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  margin-left: 100px;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff3d1b;
+}
+
+nav ul li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #ff2a1b;
+  bottom: -5px;
+  left: 0;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+header .container .logo a {
+  display: flex;
+  align-items: center;
+}
+
+header .container .logo a img {
+  margin-right: 10px;
+}
+.menu-toggle {
+  display: none;
+}
+
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+html, body{
+    height: 100%;
+    color: #000000;
+    background-color: #adadad;
+    font-family: 'Rethink Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+button{
+    font-family: 'Rethink Sans', sans-serif;
+}
+#logo{
+    width: 200px;
+    height: 100px;
+}
+#header_main{
+    height: 70px;
+    width: 100%;
+    display: block;
+    align-items: right;
+    justify-content: space-evenly;
+    padding: 20px;
+    position: fixed;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+
+}
+#header_main ul{
+    display: flex;
+    align-items: right;
+    gap: 30px;
+    font-size: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    list-style: none;
+}
+.main_page{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+.main_page_left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+.main_page_left h1{
+    font-size: 100px;
+    margin-top: 100px;
+}
+.main_page_left p{
+    color: #ffffffac;
+}
+.main_page_right{
+    height: 100%;
+    width: 50%;
+}
+.bnt_main_page{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+#list_reseau{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+#CV {
+    color: black;
+}
+#projet_bnt_main{
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #972222;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;  
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+}
+.transition1{
+    background: url("../assets/ecole.webp");
+    height: 500px;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.transition2{
+    background: url("../assets/transition2.png");
+    height: 400px;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.transition{
+    height: 700px;
+    background: url("../assets/France1.jpg");
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.transition4{
+    height: 400px;
+    background: url("../assets/transition4.png");
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  
+#header_pre{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+}
+#listCompetences{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#titlePart1Competences{
+    text-align: center;
+}
+#titre_contact{
+    text-align: left;
+    font-size: 40px;
+}
+#lien-footer{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+.langages {
+    position: relative;
+    left: 1vw;
+    height: 5cm;
+}
+.ligne{
+    border-left: 0.25vw solid rgb(255, 255, 255);
+    height: 90vh; 
+}
+#listCompetences div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#listCompetences div ul {
+    display: flex;
+    gap: 10px;
+}
+#listCompetences div li{
+    list-style: none;
+}
+.projectPage{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.sectionProject{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.projetGrid img{
+    width: 400px;
+    cursor: pointer;
+}
+.projetGrid{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.projetGrid p{
+    text-align: justify;
+}
+.presentationProjetPage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(10, 10, 10);
+    width: 75%;
+    height:900px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.presentationProjetPage nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: sticky;
+    top: 0%;
+}
+
+.presentationProjetPage nav button{
+    background-color: #405cf5;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentationProjetPage nav button img{
+    width: 20px;
+    height: 20px;
+}
+#imgProjet1{
+    width: 500px;
+}
+.mainPagePresentation{
+
+    margin-top: 20px;
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pagePre1, .pagePre2, .pagePre3{
+    visibility: hidden;
+    display: none;
+}
+
+.projetPage{
+    background-color: #D2D2C8;
+    height: 100%;
+    width: 100%;
+}
+
+.pre_page{
+    height: 100%;
+}
+#PRESENTATION {
+    text-align: center;
+}
+.pre_page_page1 p{
+    font-size: large;
+}
+
+.trueDeComposant{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#listCompetences{
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+}
+#listExperiences{
+    width: 50%;
+    height: 100%;
+}
+#listExperiences{
+    font-size: 0.5em;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#titleForEx{
+    font-size: 2rem;
+    list-style: none;
+}
+
+.england { 
+    position: relative; top: 25vh; right: 6vw 
+}
+ .espagne { 
+    position: relative; top: 40vh; right: 15vw 
+}
+
+.page3{
+    padding: 20px;
+    font-size: 50px;
+}
+
+#titlePart1{
+    text-align: center;
+    background: #ffffff;
+}
+
+.proj{
+    text-align: left;
+    font-size: 5em;
+}
+#listPro{
+    font-size: 30px;
+    text-align: justify;
+}
+#titleForEx2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.trueDeComposant2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+#listDiplomes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contactPage{
+    height: 100%;
+    padding: 20px;
+    position: relative;
+}
+.contactPage h1{
+    text-align: left;
+    font-size: 5rem;
+}
+.contactPage ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none;
+}
+footer{
+    height: 200px;
+}
+#a{
+    list-style: none;
+    display: flex;
+    align-items: left;
+    gap: 20px;
+    font-size: 50px;;
+}
+
+.page1{
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+.page1 h1{
+    font-size: 5rem;
+}
+.page1 p{
+    font-size: 2rem;
+    text-align: justify;
+}
+
+
+
+.contactPage {
+  padding: 40px;
+  background: #f4f4f9;
+  text-align: center;
+}
+
+.contactPage h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactPage p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.contact-item {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+}
+
+.contact-item img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  color: #405cf5;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #304cb2;
+}
+
+
+/* ✅ Espacement entre les grandes sections */
+.section,
+.competences-container,
+.projects-container,
+.contactPage {
+  padding-left: 5%;
+  padding-right: 5%;
+  scroll-margin-top: 100px;
+  margin-bottom: 80px;
+  transition: all 0.3s ease;
+  
+}
+
+/* ✅ Transitions visuelles entre les blocs (fondu haut) */
+.section::before {
+  content: "";
+  display: block;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, #f4f4f9);
+  margin-bottom: -40px;
+}
+
+/* ✅ Titre de section "Projets" plus sobre */
+#titlePart1.proj {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #222;
+  
+}
+
+/* ✅ Ajustements des titres généraux h1 dans les sections */
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* ✅ Conteneurs internes plus respirants */
+.container-section,
+.competences-details,
+.projects-container {
+  padding: 40px;
+  border-radius: 12px;
+}
+
+/* ✅ Responsive - meilleur confort mobile */
+@media (max-width: 768px) {
+  .section,
+  .competences-container,
+  .projects-container,
+  .contactPage {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #titlePart1.proj {
+    font-size: 2rem;
+    background-color: #f0f0f0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  
+  }
+}
+
+  
+
+
+
+
+
+
+
